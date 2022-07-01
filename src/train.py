@@ -5,8 +5,8 @@ import torch
 
 # Change data format
 
-utils.xml_to_csv("data/train/", "train_labels.csv")
-utils.xml_to_csv("data/validation/", "val_labels.csv")
+utils.xml_to_csv("../data/train/", "train_labels.csv")
+utils.xml_to_csv("../data/validation/", "val_labels.csv")
 
 # Custom transforms
 
@@ -20,18 +20,21 @@ custom_transforms = transforms.Compose(
     ]
 )
 
-dataset = core.Dataset("train_labels.csv", "data/train/", transform=custom_transforms)
+dataset = core.Dataset("train_labels.csv", "../data/train/",
+                       transform=custom_transforms)
 
 # Validation dataset
 
-val_dataset = core.Dataset("val_labels.csv", "data/validation/")
+val_dataset = core.Dataset("val_labels.csv", "../data/validation/")
 
 # Customize training options
 
 loader = core.DataLoader(dataset, batch_size=2, shuffle=True)
 
-model = core.Model(classes=["car", "truck", "rock", "tree", "log", "lilypad", "duck"], device=torch.device("cuda"))
-losses = model.fit(loader, val_dataset, epochs=20, learning_rate=0.01, verbose=True)
+model = core.Model(classes=["car", "truck", "rock", "tree",
+                   "log", "lilypad", "duck", "rail", "train", "water", "light off", "light on", "coin", "stump"],  device=torch.device("cuda"))
+losses = model.fit(loader, val_dataset, epochs=20,
+                   learning_rate=0.001, verbose=True)
 
 # Visualize loss during training
 
