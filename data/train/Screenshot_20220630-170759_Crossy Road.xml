@@ -219,7 +219,7 @@
 		<name>duck</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
-		<difficult>0</difficult>
+		<difficult>1</difficult>
 		<bndbox>
 			<xmin>170</xmin>
 			<ymin>239</ymin>
@@ -231,7 +231,7 @@
 		<name>rock</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
-		<difficult>0</difficult>
+		<difficult>1</difficult>
 		<bndbox>
 			<xmin>195</xmin>
 			<ymin>244</ymin>
