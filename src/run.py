@@ -9,8 +9,22 @@ from detecto.visualize import (
 import time
 
 
-labels = ["car", "truck", "rock", "tree",
-          "log", "lilypad", "duck", "rail", "train", "water", "light off", "light on", "coin", "stump"]
+labels = [
+    "car",
+    "truck",
+    "rock",
+    "tree",
+    "log",
+    "lilypad",
+    "duck",
+    "rail",
+    "train",
+    "water",
+    "light off",
+    "light on",
+    "coin",
+    "stump",
+]
 model = Model.load("model_weights.pth", labels)
 #
 # image = read_image("screenshot.jpeg")
@@ -28,7 +42,7 @@ model = Model.load("model_weights.pth", labels)
 # print(predictions)
 # print(top_predictions)
 
-detect_video(model, "video.avi", "../tmp/output.avi", score_filter=0.5)
+detect_video(model, "../tmp/skewed3.avi", "../tmp/detected2.avi", score_filter=0.5)
 
 
 # image = read_image("screenshot.jpeg")
