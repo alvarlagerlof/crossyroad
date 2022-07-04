@@ -57,8 +57,8 @@ losses = model.fit(loader, val_dataset, epochs=10, learning_rate=0.001, verbose=
 
 # Visualize loss during training
 
-# plt.plot(losses)
-# plt.show()
+plt.plot(losses)
+plt.show()
 
 # Save model
 

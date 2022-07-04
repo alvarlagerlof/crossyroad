@@ -45,15 +45,15 @@ model = Model.load("model_weights.pth", labels)
 # detect_video(model, "../tmp/skewed3.avi", "../tmp/detected2.avi", score_filter=0.5)
 
 
-image = read_image("../tmp/screenshot.jpeg")
+image = read_image("../data/validation/Screenshot_20220701-185522_Crossy Road.jpg")
 
 tic = time.perf_counter()
 labels, boxes, scores = model.predict(image)
 toc = time.perf_counter()
 print(f"Predicted in {toc - tic:0.4f} seconds")
 
-plot_prediction_grid(model, [image], dim=(1, 1), figsize=(1, 1), score_filter=0.4)
-# show_labeled_image(image, boxes, labels)
+# plot_prediction_grid(model, [image], dim=(1, 1), figsize=(1, 1), score_filter=0.2)
+show_labeled_image(image, boxes, labels)
 
 
 # detect_live(model, score_filter=0.7)  # Note: may not work on VMs
