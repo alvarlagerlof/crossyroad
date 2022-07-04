@@ -15,13 +15,14 @@ def skew(file):
     rows, cols = img.shape[:2]
     # [width (0-1), angle left,  x1], [angle top, heig  ht (0-1), y1]
     M = np.float32([[1, 0.5, 0], [-0.26, 1, 37]])
-    img = cv2.warpAffine(img, M, (cols+147, rows+37))
+    img = cv2.warpAffine(img, M, (cols + 147, rows + 37))
 
     cv2.imwrite(file, img)
 
 
-path = os.path.realpath(os.path.join(
-    os.path.dirname(__file__), '..', 'convert'))
+path = os.path.realpath(
+    os.path.join(os.path.dirname(__file__), "..", "data", "convert")
+)
 
 for file in os.listdir(path):
     # skew(file)
