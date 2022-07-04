@@ -42,17 +42,17 @@ model = Model.load("model_weights.pth", labels)
 # print(predictions)
 # print(top_predictions)
 
-detect_video(model, "../tmp/skewed3.avi", "../tmp/detected2.avi", score_filter=0.5)
+# detect_video(model, "../tmp/skewed3.avi", "../tmp/detected2.avi", score_filter=0.5)
 
 
-# image = read_image("screenshot.jpeg")
-#
-# tic = time.perf_counter()
-# labels, boxes, scores = model.predict(image)
-# toc = time.perf_counter()
-# print(f"Predicted in {toc - tic:0.4f} seconds")
-#
-# plot_prediction_grid(model, [image], dim=(1,1), figsize=(1,1), score_filter=0.6 )
+image = read_image("../tmp/screenshot.jpeg")
+
+tic = time.perf_counter()
+labels, boxes, scores = model.predict(image)
+toc = time.perf_counter()
+print(f"Predicted in {toc - tic:0.4f} seconds")
+
+plot_prediction_grid(model, [image], dim=(1, 1), figsize=(1, 1), score_filter=0.4)
 # show_labeled_image(image, boxes, labels)
 
 
