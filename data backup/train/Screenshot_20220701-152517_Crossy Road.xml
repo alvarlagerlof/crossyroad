@@ -1,7 +1,7 @@
 <annotation>
 	<folder>unused</folder>
-	<filename>Screenshot_20220701-152643_Crossy Road.jpg</filename>
-	<path>/Users/alvar/Code/alvarlagerlof/crossyroad/data/unused/Screenshot_20220701-152643_Crossy Road.jpg</path>
+	<filename>Screenshot_20220701-152517_Crossy Road.jpg</filename>
+	<path>/Users/alvar/Code/alvarlagerlof/crossyroad/data/unused/Screenshot_20220701-152517_Crossy Road.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -17,10 +17,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>73</xmin>
-			<ymin>132</ymin>
-			<xmax>126</xmax>
-			<ymax>164</ymax>
+			<xmin>59</xmin>
+			<ymin>109</ymin>
+			<xmax>111</xmax>
+			<ymax>141</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -29,10 +29,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>98</xmin>
-			<ymin>114</ymin>
-			<xmax>150</xmax>
-			<ymax>147</ymax>
+			<xmin>104</xmin>
+			<ymin>91</ymin>
+			<xmax>145</xmax>
+			<ymax>120</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -41,10 +41,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>21</xmin>
-			<ymin>77</ymin>
-			<xmax>63</xmax>
-			<ymax>106</ymax>
+			<xmin>148</xmin>
+			<ymin>166</ymin>
+			<xmax>199</xmax>
+			<ymax>198</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -53,10 +53,34 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>126</xmin>
-			<ymin>188</ymin>
-			<xmax>179</xmax>
-			<ymax>221</ymax>
+			<xmin>97</xmin>
+			<ymin>128</ymin>
+			<xmax>157</xmax>
+			<ymax>157</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>car</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>216</xmin>
+			<ymin>203</ymin>
+			<xmax>268</xmax>
+			<ymax>233</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>car</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>64</xmin>
+			<ymin>202</ymin>
+			<xmax>110</xmax>
+			<ymax>232</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -65,34 +89,58 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>172</xmin>
-			<ymin>226</ymin>
-			<xmax>190</xmax>
-			<ymax>251</ymax>
+			<xmin>170</xmin>
+			<ymin>241</ymin>
+			<xmax>191</xmax>
+			<ymax>263</ymax>
 		</bndbox>
 	</object>
 	<object>
-		<name>rock</name>
+		<name>truck</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>117</xmin>
-			<ymin>230</ymin>
-			<xmax>144</xmax>
-			<ymax>252</ymax>
+			<xmin>167</xmin>
+			<ymin>266</ymin>
+			<xmax>256</xmax>
+			<ymax>306</ymax>
 		</bndbox>
 	</object>
 	<object>
-		<name>rock</name>
+		<name>truck</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>195</xmin>
-			<ymin>270</ymin>
-			<xmax>219</xmax>
-			<ymax>291</ymax>
+			<xmin>162</xmin>
+			<ymin>286</ymin>
+			<xmax>245</xmax>
+			<ymax>321</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>tree</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>238</xmin>
+			<ymin>300</ymin>
+			<xmax>259</xmax>
+			<ymax>325</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>tree</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>216</xmin>
+			<ymin>232</ymin>
+			<xmax>243</xmax>
+			<ymax>265</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -102,21 +150,69 @@
 		<difficult>0</difficult>
 		<bndbox>
 			<xmin>218</xmin>
-			<ymin>169</ymin>
-			<xmax>244</xmax>
-			<ymax>195</ymax>
+			<ymin>177</ymin>
+			<xmax>242</xmax>
+			<ymax>208</ymax>
 		</bndbox>
 	</object>
 	<object>
-		<name>tree</name>
+		<name>rock</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>114</xmin>
+			<xmin>168</xmin>
+			<ymin>191</ymin>
+			<xmax>195</xmax>
+			<ymax>212</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>light off</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>121</xmin>
 			<ymin>257</ymin>
-			<xmax>136</xmax>
-			<ymax>286</ymax>
+			<xmax>148</xmax>
+			<ymax>294</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>rail</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>113</xmin>
+			<ymin>268</ymin>
+			<xmax>290</xmax>
+			<ymax>290</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>rail</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1</xmin>
+			<ymin>45</ymin>
+			<xmax>179</xmax>
+			<ymax>68</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>light off</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>123</xmin>
+			<ymin>34</ymin>
+			<xmax>150</xmax>
+			<ymax>69</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -125,10 +221,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>114</xmin>
-			<ymin>243</ymin>
-			<xmax>137</xmax>
-			<ymax>269</ymax>
+			<xmin>65</xmin>
+			<ymin>72</ymin>
+			<xmax>85</xmax>
+			<ymax>96</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -137,70 +233,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>84</xmin>
-			<ymin>212</ymin>
-			<xmax>110</xmax>
-			<ymax>251</ymax>
-		</bndbox>
-	</object>
-	<object>
-		<name>tree</name>
-		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<difficult>0</difficult>
-		<bndbox>
-			<xmin>242</xmin>
-			<ymin>237</ymin>
-			<xmax>269</xmax>
-			<ymax>268</ymax>
-		</bndbox>
-	</object>
-	<object>
-		<name>tree</name>
-		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<difficult>0</difficult>
-		<bndbox>
-			<xmin>244</xmin>
-			<ymin>260</ymin>
-			<xmax>268</xmax>
-			<ymax>288</ymax>
-		</bndbox>
-	</object>
-	<object>
-		<name>tree</name>
-		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<difficult>0</difficult>
-		<bndbox>
-			<xmin>115</xmin>
-			<ymin>95</ymin>
-			<xmax>138</xmax>
-			<ymax>118</ymax>
-		</bndbox>
-	</object>
-	<object>
-		<name>tree</name>
-		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<difficult>0</difficult>
-		<bndbox>
-			<xmin>57</xmin>
-			<ymin>20</ymin>
-			<xmax>86</xmax>
-			<ymax>64</ymax>
-		</bndbox>
-	</object>
-	<object>
-		<name>tree</name>
-		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<difficult>0</difficult>
-		<bndbox>
-			<xmin>6</xmin>
-			<ymin>27</ymin>
+			<xmin>3</xmin>
+			<ymin>40</ymin>
 			<xmax>36</xmax>
-			<ymax>64</ymax>
+			<ymax>78</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -209,46 +245,22 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>38</xmin>
-			<ymin>21</ymin>
-			<xmax>62</xmax>
-			<ymax>46</ymax>
-		</bndbox>
-	</object>
-	<object>
-		<name>tree</name>
-		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<difficult>0</difficult>
-		<bndbox>
-			<xmin>63</xmin>
-			<ymin>17</ymin>
-			<xmax>87</xmax>
+			<xmin>61</xmin>
+			<ymin>7</ymin>
+			<xmax>88</xmax>
 			<ymax>43</ymax>
 		</bndbox>
 	</object>
 	<object>
-		<name>tree</name>
+		<name>truck</name>
 		<pose>Unspecified</pose>
-		<truncated>0</truncated>
+		<truncated>1</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>15</xmin>
-			<ymin>19</ymin>
-			<xmax>36</xmax>
-			<ymax>46</ymax>
-		</bndbox>
-	</object>
-	<object>
-		<name>tree</name>
-		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<difficult>0</difficult>
-		<bndbox>
-			<xmin>30</xmin>
-			<ymin>83</ymin>
-			<xmax>60</xmax>
-			<ymax>120</ymax>
+			<xmin>24</xmin>
+			<ymin>1</ymin>
+			<xmax>95</xmax>
+			<ymax>29</ymax>
 		</bndbox>
 	</object>
 </annotation>

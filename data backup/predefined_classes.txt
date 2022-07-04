@@ -8,7 +8,6 @@ truck
 light off
 light on
 water
-coin
+coil
 rail
 train
-stump
