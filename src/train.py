@@ -5,8 +5,8 @@ import torch
 
 # Change data format
 
-utils.xml_to_csv("../data/train/", "train_labels.csv")
-utils.xml_to_csv("../data/validation/", "val_labels.csv")
+utils.xml_to_csv("../data/train/", "../tmp/train_labels.csv")
+utils.xml_to_csv("../data/validation/", "../tmp/val_labels.csv")
 
 # Custom transforms
 
@@ -21,12 +21,12 @@ custom_transforms = transforms.Compose(
 )
 
 dataset = core.Dataset(
-    "train_labels.csv", "../data/train/", transform=custom_transforms
+    "../tmp/train_labels.csv", "../data/train/", transform=custom_transforms
 )
 
 # Validation dataset
 
-val_dataset = core.Dataset("val_labels.csv", "../data/validation/")
+val_dataset = core.Dataset("../tmp/val_labels.csv", "../data/validation/")
 
 # Customize training options
 

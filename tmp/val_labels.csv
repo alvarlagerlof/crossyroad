@@ -1,50 +1,53 @@
 filename,width,height,class,xmin,ymin,xmax,ymax,image_id
-Screenshot_20220630-174411_Crossy Road.jpg,291,333,car,51,86,104,118,0
-Screenshot_20220630-174411_Crossy Road.jpg,291,333,car,68,48,108,78,0
-Screenshot_20220630-174411_Crossy Road.jpg,291,333,car,96,29,149,62,0
-Screenshot_20220630-174411_Crossy Road.jpg,291,333,car,124,122,182,154,0
-Screenshot_20220630-174411_Crossy Road.jpg,291,333,car,137,104,195,135,0
-Screenshot_20220630-174411_Crossy Road.jpg,291,333,car,86,197,135,229,0
-Screenshot_20220630-174411_Crossy Road.jpg,291,333,truck,52,168,137,211,0
-Screenshot_20220630-174411_Crossy Road.jpg,291,333,rock,143,238,168,260,0
-Screenshot_20220630-174411_Crossy Road.jpg,291,333,rock,143,258,168,279,0
-Screenshot_20220630-174411_Crossy Road.jpg,291,333,rock,143,278,167,300,0
-Screenshot_20220630-174411_Crossy Road.jpg,291,333,log,6,26,89,41,0
-Screenshot_20220630-174411_Crossy Road.jpg,291,333,log,83,7,140,24,0
-Screenshot_20220630-174411_Crossy Road.jpg,291,333,tree,144,67,166,91,0
-Screenshot_20220630-174411_Crossy Road.jpg,291,333,tree,10,66,34,92,0
-Screenshot_20220630-174411_Crossy Road.jpg,291,333,tree,191,134,217,164,0
-Screenshot_20220630-174411_Crossy Road.jpg,291,333,tree,193,159,216,185,0
-Screenshot_20220630-174411_Crossy Road.jpg,291,333,tree,112,153,139,183,0
-Screenshot_20220630-174411_Crossy Road.jpg,291,333,tree,219,233,241,259,0
-Screenshot_20220630-174411_Crossy Road.jpg,291,333,tree,242,227,268,260,0
-Screenshot_20220630-174411_Crossy Road.jpg,291,333,tree,190,263,214,294,0
-Screenshot_20220630-174411_Crossy Road.jpg,291,333,tree,109,265,138,295,0
-Screenshot_20220630-174411_Crossy Road.jpg,291,333,car,188,290,245,321,0
-Screenshot_20220630-174411_Crossy Road.jpg,291,333,duck,172,234,190,258,0
-Screenshot_20220630-174411_Crossy Road.jpg,291,333,tree,34,120,61,158,0
-Screenshot_20220630-174411_Crossy Road.jpg,291,333,water,1,1,169,44,0
-Screenshot_20220701-152528_Crossy%20Road.jpg,291,333,rail,74,191,250,213,1
-Screenshot_20220701-152528_Crossy%20Road.jpg,291,333,rail,109,265,291,286,1
-Screenshot_20220701-152528_Crossy%20Road.jpg,291,333,tree,137,229,165,263,1
-Screenshot_20220701-152528_Crossy%20Road.jpg,291,333,tree,191,153,217,187,1
-Screenshot_20220701-152528_Crossy%20Road.jpg,291,333,tree,29,68,64,114,1
-Screenshot_20220701-152528_Crossy%20Road.jpg,291,333,tree,58,75,89,110,1
-Screenshot_20220701-152528_Crossy%20Road.jpg,291,333,tree,38,2,63,41,1
-Screenshot_20220701-152528_Crossy%20Road.jpg,291,333,tree,14,2,36,39,1
-Screenshot_20220701-152528_Crossy%20Road.jpg,291,333,car,119,32,177,65,1
-Screenshot_20220701-152528_Crossy%20Road.jpg,291,333,coin,75,66,90,80,1
-Screenshot_20220701-152528_Crossy%20Road.jpg,291,333,coin,99,139,113,151,1
-Screenshot_20220701-152528_Crossy%20Road.jpg,291,333,car,51,108,103,138,1
-Screenshot_20220701-152528_Crossy%20Road.jpg,291,333,truck,65,207,133,249,1
-Screenshot_20220701-152528_Crossy%20Road.jpg,291,333,truck,201,209,282,246,1
-Screenshot_20220701-152528_Crossy%20Road.jpg,291,333,duck,169,237,191,262,1
-Screenshot_20220701-152528_Crossy%20Road.jpg,291,333,light off,147,179,176,215,1
-Screenshot_20220701-152528_Crossy%20Road.jpg,291,333,light off,146,255,173,289,1
-Screenshot_20220701-152528_Crossy%20Road.jpg,291,333,tree,218,290,243,317,1
-Screenshot_20220701-152528_Crossy%20Road.jpg,291,333,tree,81,221,113,263,1
-Screenshot_20220701-152528_Crossy%20Road.jpg,291,333,tree,1,67,37,107,1
-Screenshot_20220701-152528_Crossy%20Road.jpg,291,333,car,8,50,64,81,1
+Screenshot_20220630-174202_Crossy Road.jpg,291,333,water,55,151,258,225,0
+Screenshot_20220630-174202_Crossy Road.jpg,291,333,log,94,170,174,185,0
+Screenshot_20220630-174202_Crossy Road.jpg,291,333,log,195,152,227,166,0
+Screenshot_20220630-174202_Crossy Road.jpg,291,333,log,213,171,239,186,0
+Screenshot_20220630-174202_Crossy Road.jpg,291,333,log,195,188,249,203,0
+Screenshot_20220630-174202_Crossy Road.jpg,291,333,lilypad,124,210,142,224,0
+Screenshot_20220630-174202_Crossy Road.jpg,291,333,lilypad,178,210,195,224,0
+Screenshot_20220630-174202_Crossy Road.jpg,291,333,lilypad,203,208,221,224,0
+Screenshot_20220630-174202_Crossy Road.jpg,291,333,tree,82,79,112,125,0
+Screenshot_20220630-174202_Crossy Road.jpg,291,333,tree,115,93,138,126,0
+Screenshot_20220630-174202_Crossy Road.jpg,291,333,tree,56,24,87,68,0
+Screenshot_20220630-174202_Crossy Road.jpg,291,333,log,56,152,105,166,0
+Screenshot_20220630-174202_Crossy Road.jpg,291,333,tree,191,224,216,254,0
+Screenshot_20220630-174202_Crossy Road.jpg,291,333,duck,172,231,189,254,0
+Screenshot_20220630-174202_Crossy Road.jpg,291,333,car,94,81,145,113,0
+Screenshot_20220630-174202_Crossy Road.jpg,291,333,car,14,28,68,55,0
+Screenshot_20220630-174202_Crossy Road.jpg,291,333,car,72,249,121,281,0
+Screenshot_20220630-174202_Crossy Road.jpg,291,333,car,92,1,138,22,0
+Screenshot_20220630-174202_Crossy Road.jpg,291,333,tree,42,1,60,30,0
+Screenshot_20220630-174202_Crossy Road.jpg,291,333,car,193,304,243,328,0
+Screenshot_20220630-174202_Crossy Road.jpg,291,333,light off,146,284,172,321,0
+Screenshot_20220630-174202_Crossy Road.jpg,291,333,truck,203,254,290,299,0
+Screenshot_20220630-174202_Crossy Road.jpg,291,333,rail,127,295,291,318,0
+Screenshot_20220630-174202_Crossy Road.jpg,291,333,log,42,172,73,183,0
+Screenshot_20220630-174202_Crossy Road.jpg,291,333,tree,30,26,61,70,0
+Screenshot_20220630-174215_Crossy Road.jpg,291,333,log,36,95,92,110,1
+Screenshot_20220630-174215_Crossy Road.jpg,291,333,log,89,113,145,128,1
+Screenshot_20220630-174215_Crossy Road.jpg,291,333,log,111,95,191,108,1
+Screenshot_20220630-174215_Crossy Road.jpg,291,333,log,114,132,194,146,1
+Screenshot_20220630-174215_Crossy Road.jpg,291,333,log,173,113,214,126,1
+Screenshot_20220630-174215_Crossy Road.jpg,291,333,log,144,168,198,184,1
+Screenshot_20220630-174215_Crossy Road.jpg,291,333,rock,197,177,221,199,1
+Screenshot_20220630-174215_Crossy Road.jpg,291,333,rock,142,195,166,218,1
+Screenshot_20220630-174215_Crossy Road.jpg,291,333,car,112,209,147,237,1
+Screenshot_20220630-174215_Crossy Road.jpg,291,333,tree,94,227,109,254,1
+Screenshot_20220630-174215_Crossy Road.jpg,291,333,truck,124,236,213,278,1
+Screenshot_20220630-174215_Crossy Road.jpg,291,333,car,112,301,164,333,1
+Screenshot_20220630-174215_Crossy Road.jpg,291,333,car,89,264,147,296,1
+Screenshot_20220630-174215_Crossy Road.jpg,291,333,car,53,42,106,76,1
+Screenshot_20220630-174215_Crossy Road.jpg,291,333,car,99,24,150,57,1
+Screenshot_20220630-174215_Crossy Road.jpg,291,333,car,112,4,166,36,1
+Screenshot_20220630-174215_Crossy Road.jpg,291,333,lilypad,175,152,196,165,1
+Screenshot_20220630-174215_Crossy Road.jpg,291,333,lilypad,153,78,170,92,1
+Screenshot_20220630-174215_Crossy Road.jpg,291,333,lilypad,178,78,192,92,1
+Screenshot_20220630-174215_Crossy Road.jpg,291,333,tree,194,227,214,254,1
+Screenshot_20220630-174215_Crossy Road.jpg,291,333,tree,217,220,243,253,1
+Screenshot_20220630-174215_Crossy Road.jpg,291,333,tree,236,207,268,252,1
+Screenshot_20220630-174215_Crossy Road.jpg,291,333,water,17,75,238,184,1
+Screenshot_20220630-174215_Crossy Road.jpg,291,333,duck,171,228,187,247,1
 Screenshot_20220630-174232_Crossy Road.jpg,291,333,light off,148,109,172,143,2
 Screenshot_20220630-174232_Crossy Road.jpg,291,333,rock,197,135,220,158,2
 Screenshot_20220630-174232_Crossy Road.jpg,291,333,tree,63,129,89,153,2
@@ -68,56 +71,56 @@ Screenshot_20220630-174232_Crossy Road.jpg,291,333,duck,171,241,190,265,2
 Screenshot_20220630-174232_Crossy Road.jpg,291,333,rail,41,122,218,142,2
 Screenshot_20220630-174232_Crossy Road.jpg,291,333,car,1,54,40,84,2
 Screenshot_20220630-174232_Crossy Road.jpg,291,333,stump,75,194,84,207,2
-Screenshot_20220630-174433_Crossy Road.jpg,291,333,water,33,107,211,125,3
-Screenshot_20220630-174433_Crossy Road.jpg,291,333,water,60,163,233,181,3
-Screenshot_20220630-174433_Crossy Road.jpg,291,333,water,127,292,291,333,3
-Screenshot_20220630-174433_Crossy Road.jpg,291,333,lilypad,151,109,172,124,3
-Screenshot_20220630-174433_Crossy Road.jpg,291,333,lilypad,151,164,171,180,3
-Screenshot_20220630-174433_Crossy Road.jpg,291,333,lilypad,99,162,117,179,3
-Screenshot_20220630-174433_Crossy Road.jpg,291,333,lilypad,73,164,92,179,3
-Screenshot_20220630-174433_Crossy Road.jpg,291,333,log,155,292,211,307,3
-Screenshot_20220630-174433_Crossy Road.jpg,291,333,log,134,311,201,326,3
-Screenshot_20220630-174433_Crossy Road.jpg,291,333,rock,116,171,140,193,3
-Screenshot_20220630-174433_Crossy Road.jpg,291,333,tree,91,54,113,81,3
-Screenshot_20220630-174433_Crossy Road.jpg,291,333,tree,116,73,138,99,3
-Screenshot_20220630-174433_Crossy Road.jpg,291,333,tree,10,53,35,77,3
-Screenshot_20220630-174433_Crossy Road.jpg,291,333,tree,9,74,34,97,3
-Screenshot_20220630-174433_Crossy Road.jpg,291,333,car,38,19,89,50,3
-Screenshot_20220630-174433_Crossy Road.jpg,291,333,rail,49,9,160,33,3
-Screenshot_20220630-174433_Crossy Road.jpg,291,333,light off,124,1,150,34,3
-Screenshot_20220630-174433_Crossy Road.jpg,291,333,tree,110,251,137,285,3
-Screenshot_20220630-174433_Crossy Road.jpg,291,333,tree,265,246,291,288,3
-Screenshot_20220630-174433_Crossy Road.jpg,291,333,car,140,241,192,272,3
-Screenshot_20220630-174433_Crossy Road.jpg,291,333,car,236,221,284,251,3
-Screenshot_20220630-174433_Crossy Road.jpg,291,333,duck,172,225,193,251,3
-Screenshot_20220630-174433_Crossy Road.jpg,291,333,car,96,129,155,160,3
-Screenshot_20220630-174433_Crossy Road.jpg,291,333,car,104,112,156,138,3
-Screenshot_20220630-174433_Crossy Road.jpg,291,333,tree,244,207,274,243,3
-Screenshot_20220630-174202_Crossy Road.jpg,291,333,water,55,151,258,225,4
-Screenshot_20220630-174202_Crossy Road.jpg,291,333,log,94,170,174,185,4
-Screenshot_20220630-174202_Crossy Road.jpg,291,333,log,195,152,227,166,4
-Screenshot_20220630-174202_Crossy Road.jpg,291,333,log,213,171,239,186,4
-Screenshot_20220630-174202_Crossy Road.jpg,291,333,log,195,188,249,203,4
-Screenshot_20220630-174202_Crossy Road.jpg,291,333,lilypad,124,210,142,224,4
-Screenshot_20220630-174202_Crossy Road.jpg,291,333,lilypad,178,210,195,224,4
-Screenshot_20220630-174202_Crossy Road.jpg,291,333,lilypad,203,208,221,224,4
-Screenshot_20220630-174202_Crossy Road.jpg,291,333,tree,82,79,112,125,4
-Screenshot_20220630-174202_Crossy Road.jpg,291,333,tree,115,93,138,126,4
-Screenshot_20220630-174202_Crossy Road.jpg,291,333,tree,56,24,87,68,4
-Screenshot_20220630-174202_Crossy Road.jpg,291,333,log,56,152,105,166,4
-Screenshot_20220630-174202_Crossy Road.jpg,291,333,tree,191,224,216,254,4
-Screenshot_20220630-174202_Crossy Road.jpg,291,333,duck,172,231,189,254,4
-Screenshot_20220630-174202_Crossy Road.jpg,291,333,car,94,81,145,113,4
-Screenshot_20220630-174202_Crossy Road.jpg,291,333,car,14,28,68,55,4
-Screenshot_20220630-174202_Crossy Road.jpg,291,333,car,72,249,121,281,4
-Screenshot_20220630-174202_Crossy Road.jpg,291,333,car,92,1,138,22,4
-Screenshot_20220630-174202_Crossy Road.jpg,291,333,tree,42,1,60,30,4
-Screenshot_20220630-174202_Crossy Road.jpg,291,333,car,193,304,243,328,4
-Screenshot_20220630-174202_Crossy Road.jpg,291,333,light off,146,284,172,321,4
-Screenshot_20220630-174202_Crossy Road.jpg,291,333,truck,203,254,290,299,4
-Screenshot_20220630-174202_Crossy Road.jpg,291,333,rail,127,295,291,318,4
-Screenshot_20220630-174202_Crossy Road.jpg,291,333,log,42,172,73,183,4
-Screenshot_20220630-174202_Crossy Road.jpg,291,333,tree,30,26,61,70,4
+Screenshot_20220630-174411_Crossy Road.jpg,291,333,car,51,86,104,118,3
+Screenshot_20220630-174411_Crossy Road.jpg,291,333,car,68,48,108,78,3
+Screenshot_20220630-174411_Crossy Road.jpg,291,333,car,96,29,149,62,3
+Screenshot_20220630-174411_Crossy Road.jpg,291,333,car,124,122,182,154,3
+Screenshot_20220630-174411_Crossy Road.jpg,291,333,car,137,104,195,135,3
+Screenshot_20220630-174411_Crossy Road.jpg,291,333,car,86,197,135,229,3
+Screenshot_20220630-174411_Crossy Road.jpg,291,333,truck,52,168,137,211,3
+Screenshot_20220630-174411_Crossy Road.jpg,291,333,rock,143,238,168,260,3
+Screenshot_20220630-174411_Crossy Road.jpg,291,333,rock,143,258,168,279,3
+Screenshot_20220630-174411_Crossy Road.jpg,291,333,rock,143,278,167,300,3
+Screenshot_20220630-174411_Crossy Road.jpg,291,333,log,6,26,89,41,3
+Screenshot_20220630-174411_Crossy Road.jpg,291,333,log,83,7,140,24,3
+Screenshot_20220630-174411_Crossy Road.jpg,291,333,tree,144,67,166,91,3
+Screenshot_20220630-174411_Crossy Road.jpg,291,333,tree,10,66,34,92,3
+Screenshot_20220630-174411_Crossy Road.jpg,291,333,tree,191,134,217,164,3
+Screenshot_20220630-174411_Crossy Road.jpg,291,333,tree,193,159,216,185,3
+Screenshot_20220630-174411_Crossy Road.jpg,291,333,tree,112,153,139,183,3
+Screenshot_20220630-174411_Crossy Road.jpg,291,333,tree,219,233,241,259,3
+Screenshot_20220630-174411_Crossy Road.jpg,291,333,tree,242,227,268,260,3
+Screenshot_20220630-174411_Crossy Road.jpg,291,333,tree,190,263,214,294,3
+Screenshot_20220630-174411_Crossy Road.jpg,291,333,tree,109,265,138,295,3
+Screenshot_20220630-174411_Crossy Road.jpg,291,333,car,188,290,245,321,3
+Screenshot_20220630-174411_Crossy Road.jpg,291,333,duck,172,234,190,258,3
+Screenshot_20220630-174411_Crossy Road.jpg,291,333,tree,34,120,61,158,3
+Screenshot_20220630-174411_Crossy Road.jpg,291,333,water,1,1,169,44,3
+Screenshot_20220630-174433_Crossy Road.jpg,291,333,water,33,107,211,125,4
+Screenshot_20220630-174433_Crossy Road.jpg,291,333,water,60,163,233,181,4
+Screenshot_20220630-174433_Crossy Road.jpg,291,333,water,127,292,291,333,4
+Screenshot_20220630-174433_Crossy Road.jpg,291,333,lilypad,151,109,172,124,4
+Screenshot_20220630-174433_Crossy Road.jpg,291,333,lilypad,151,164,171,180,4
+Screenshot_20220630-174433_Crossy Road.jpg,291,333,lilypad,99,162,117,179,4
+Screenshot_20220630-174433_Crossy Road.jpg,291,333,lilypad,73,164,92,179,4
+Screenshot_20220630-174433_Crossy Road.jpg,291,333,log,155,292,211,307,4
+Screenshot_20220630-174433_Crossy Road.jpg,291,333,log,134,311,201,326,4
+Screenshot_20220630-174433_Crossy Road.jpg,291,333,rock,116,171,140,193,4
+Screenshot_20220630-174433_Crossy Road.jpg,291,333,tree,91,54,113,81,4
+Screenshot_20220630-174433_Crossy Road.jpg,291,333,tree,116,73,138,99,4
+Screenshot_20220630-174433_Crossy Road.jpg,291,333,tree,10,53,35,77,4
+Screenshot_20220630-174433_Crossy Road.jpg,291,333,tree,9,74,34,97,4
+Screenshot_20220630-174433_Crossy Road.jpg,291,333,car,38,19,89,50,4
+Screenshot_20220630-174433_Crossy Road.jpg,291,333,rail,49,9,160,33,4
+Screenshot_20220630-174433_Crossy Road.jpg,291,333,light off,124,1,150,34,4
+Screenshot_20220630-174433_Crossy Road.jpg,291,333,tree,110,251,137,285,4
+Screenshot_20220630-174433_Crossy Road.jpg,291,333,tree,265,246,291,288,4
+Screenshot_20220630-174433_Crossy Road.jpg,291,333,car,140,241,192,272,4
+Screenshot_20220630-174433_Crossy Road.jpg,291,333,car,236,221,284,251,4
+Screenshot_20220630-174433_Crossy Road.jpg,291,333,duck,172,225,193,251,4
+Screenshot_20220630-174433_Crossy Road.jpg,291,333,car,96,129,155,160,4
+Screenshot_20220630-174433_Crossy Road.jpg,291,333,car,104,112,156,138,4
+Screenshot_20220630-174433_Crossy Road.jpg,291,333,tree,244,207,274,243,4
 Screenshot_20220630-174445_Crossy Road.jpg,291,333,car,110,106,168,138,5
 Screenshot_20220630-174445_Crossy Road.jpg,291,333,car,127,161,178,192,5
 Screenshot_20220630-174445_Crossy Road.jpg,291,333,car,110,217,163,250,5
@@ -138,48 +141,45 @@ Screenshot_20220630-174445_Crossy Road.jpg,291,333,tree,193,235,216,265,5
 Screenshot_20220630-174445_Crossy Road.jpg,291,333,water,123,289,291,306,5
 Screenshot_20220630-174445_Crossy Road.jpg,291,333,tree,142,4,165,39,5
 Screenshot_20220630-174445_Crossy Road.jpg,291,333,duck,172,237,189,260,5
-Screenshot_20220630-174215_Crossy Road.jpg,291,333,log,36,95,92,110,6
-Screenshot_20220630-174215_Crossy Road.jpg,291,333,log,89,113,145,128,6
-Screenshot_20220630-174215_Crossy Road.jpg,291,333,log,111,95,191,108,6
-Screenshot_20220630-174215_Crossy Road.jpg,291,333,log,114,132,194,146,6
-Screenshot_20220630-174215_Crossy Road.jpg,291,333,log,173,113,214,126,6
-Screenshot_20220630-174215_Crossy Road.jpg,291,333,log,144,168,198,184,6
-Screenshot_20220630-174215_Crossy Road.jpg,291,333,rock,197,177,221,199,6
-Screenshot_20220630-174215_Crossy Road.jpg,291,333,rock,142,195,166,218,6
-Screenshot_20220630-174215_Crossy Road.jpg,291,333,car,112,209,147,237,6
-Screenshot_20220630-174215_Crossy Road.jpg,291,333,tree,94,227,109,254,6
-Screenshot_20220630-174215_Crossy Road.jpg,291,333,truck,124,236,213,278,6
-Screenshot_20220630-174215_Crossy Road.jpg,291,333,car,112,301,164,333,6
-Screenshot_20220630-174215_Crossy Road.jpg,291,333,car,89,264,147,296,6
-Screenshot_20220630-174215_Crossy Road.jpg,291,333,car,53,42,106,76,6
-Screenshot_20220630-174215_Crossy Road.jpg,291,333,car,99,24,150,57,6
-Screenshot_20220630-174215_Crossy Road.jpg,291,333,car,112,4,166,36,6
-Screenshot_20220630-174215_Crossy Road.jpg,291,333,lilypad,175,152,196,165,6
-Screenshot_20220630-174215_Crossy Road.jpg,291,333,lilypad,153,78,170,92,6
-Screenshot_20220630-174215_Crossy Road.jpg,291,333,lilypad,178,78,192,92,6
-Screenshot_20220630-174215_Crossy Road.jpg,291,333,tree,194,227,214,254,6
-Screenshot_20220630-174215_Crossy Road.jpg,291,333,tree,217,220,243,253,6
-Screenshot_20220630-174215_Crossy Road.jpg,291,333,tree,236,207,268,252,6
-Screenshot_20220630-174215_Crossy Road.jpg,291,333,water,17,75,238,184,6
-Screenshot_20220630-174215_Crossy Road.jpg,291,333,duck,171,228,187,247,6
-Screenshot_20220630-222931_Crossy Road.jpg,291,333,log,74,33,132,47,7
-Screenshot_20220630-222931_Crossy Road.jpg,291,333,log,106,51,158,65,7
-Screenshot_20220630-222931_Crossy Road.jpg,291,333,lilypad,126,16,145,30,7
-Screenshot_20220630-222931_Crossy Road.jpg,291,333,water,1,13,181,68,7
-Screenshot_20220630-222931_Crossy Road.jpg,291,333,water,87,218,280,272,7
-Screenshot_20220630-222931_Crossy Road.jpg,291,333,log,163,217,218,233,7
-Screenshot_20220630-222931_Crossy Road.jpg,291,333,log,95,237,139,251,7
-Screenshot_20220630-222931_Crossy Road.jpg,291,333,log,248,237,277,250,7
-Screenshot_20220630-222931_Crossy Road.jpg,291,333,log,88,257,119,269,7
-Screenshot_20220630-222931_Crossy Road.jpg,291,333,duck,171,278,189,303,7
-Screenshot_20220630-222931_Crossy Road.jpg,291,333,tree,186,270,217,302,7
-Screenshot_20220630-222931_Crossy Road.jpg,291,333,truck,235,249,291,289,7
-Screenshot_20220630-222931_Crossy Road.jpg,291,333,log,163,256,219,271,7
-Screenshot_20220630-222931_Crossy Road.jpg,291,333,car,134,147,192,182,7
-Screenshot_20220630-222931_Crossy Road.jpg,291,333,car,144,110,196,142,7
-Screenshot_20220630-222931_Crossy Road.jpg,291,333,truck,6,64,68,103,7
-Screenshot_20220630-222931_Crossy Road.jpg,291,333,truck,5,43,81,82,7
-Screenshot_20220630-222931_Crossy Road.jpg,291,333,tree,82,115,113,156,7
-Screenshot_20220630-222931_Crossy Road.jpg,291,333,tree,55,71,88,119,7
-Screenshot_20220630-222931_Crossy Road.jpg,291,333,tree,40,92,62,117,7
-Screenshot_20220630-222931_Crossy Road.jpg,291,333,tree,32,115,63,155,7
+Screenshot_20220630-222931_Crossy Road.jpg,291,333,log,74,33,132,47,6
+Screenshot_20220630-222931_Crossy Road.jpg,291,333,log,106,51,158,65,6
+Screenshot_20220630-222931_Crossy Road.jpg,291,333,lilypad,126,16,145,30,6
+Screenshot_20220630-222931_Crossy Road.jpg,291,333,water,1,13,181,68,6
+Screenshot_20220630-222931_Crossy Road.jpg,291,333,water,87,218,280,272,6
+Screenshot_20220630-222931_Crossy Road.jpg,291,333,log,163,217,218,233,6
+Screenshot_20220630-222931_Crossy Road.jpg,291,333,log,95,237,139,251,6
+Screenshot_20220630-222931_Crossy Road.jpg,291,333,log,248,237,277,250,6
+Screenshot_20220630-222931_Crossy Road.jpg,291,333,log,88,257,119,269,6
+Screenshot_20220630-222931_Crossy Road.jpg,291,333,duck,171,278,189,303,6
+Screenshot_20220630-222931_Crossy Road.jpg,291,333,tree,186,270,217,302,6
+Screenshot_20220630-222931_Crossy Road.jpg,291,333,truck,235,249,291,289,6
+Screenshot_20220630-222931_Crossy Road.jpg,291,333,log,163,256,219,271,6
+Screenshot_20220630-222931_Crossy Road.jpg,291,333,car,134,147,192,182,6
+Screenshot_20220630-222931_Crossy Road.jpg,291,333,car,144,110,196,142,6
+Screenshot_20220630-222931_Crossy Road.jpg,291,333,truck,6,64,68,103,6
+Screenshot_20220630-222931_Crossy Road.jpg,291,333,truck,5,43,81,82,6
+Screenshot_20220630-222931_Crossy Road.jpg,291,333,tree,82,115,113,156,6
+Screenshot_20220630-222931_Crossy Road.jpg,291,333,tree,55,71,88,119,6
+Screenshot_20220630-222931_Crossy Road.jpg,291,333,tree,40,92,62,117,6
+Screenshot_20220630-222931_Crossy Road.jpg,291,333,tree,32,115,63,155,6
+Screenshot_20220701-152528_Crossy%20Road.jpg,291,333,rail,74,191,250,213,7
+Screenshot_20220701-152528_Crossy%20Road.jpg,291,333,rail,109,265,291,286,7
+Screenshot_20220701-152528_Crossy%20Road.jpg,291,333,tree,137,229,165,263,7
+Screenshot_20220701-152528_Crossy%20Road.jpg,291,333,tree,191,153,217,187,7
+Screenshot_20220701-152528_Crossy%20Road.jpg,291,333,tree,29,68,64,114,7
+Screenshot_20220701-152528_Crossy%20Road.jpg,291,333,tree,58,75,89,110,7
+Screenshot_20220701-152528_Crossy%20Road.jpg,291,333,tree,38,2,63,41,7
+Screenshot_20220701-152528_Crossy%20Road.jpg,291,333,tree,14,2,36,39,7
+Screenshot_20220701-152528_Crossy%20Road.jpg,291,333,car,119,32,177,65,7
+Screenshot_20220701-152528_Crossy%20Road.jpg,291,333,coin,75,66,90,80,7
+Screenshot_20220701-152528_Crossy%20Road.jpg,291,333,coin,99,139,113,151,7
+Screenshot_20220701-152528_Crossy%20Road.jpg,291,333,car,51,108,103,138,7
+Screenshot_20220701-152528_Crossy%20Road.jpg,291,333,truck,65,207,133,249,7
+Screenshot_20220701-152528_Crossy%20Road.jpg,291,333,truck,201,209,282,246,7
+Screenshot_20220701-152528_Crossy%20Road.jpg,291,333,duck,169,237,191,262,7
+Screenshot_20220701-152528_Crossy%20Road.jpg,291,333,light off,147,179,176,215,7
+Screenshot_20220701-152528_Crossy%20Road.jpg,291,333,light off,146,255,173,289,7
+Screenshot_20220701-152528_Crossy%20Road.jpg,291,333,tree,218,290,243,317,7
+Screenshot_20220701-152528_Crossy%20Road.jpg,291,333,tree,81,221,113,263,7
+Screenshot_20220701-152528_Crossy%20Road.jpg,291,333,tree,1,67,37,107,7
+Screenshot_20220701-152528_Crossy%20Road.jpg,291,333,car,8,50,64,81,7
