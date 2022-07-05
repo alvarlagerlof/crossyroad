@@ -53,7 +53,8 @@ model = core.Model(
 )
 # device=torch.device("cuda")
 
-losses = model.fit(loader, val_dataset, epochs=10, learning_rate=0.001, verbose=True)
+losses = model.fit(loader, val_dataset, epochs=10,
+                   learning_rate=0.001, verbose=True)
 
 # Visualize loss during training
 
@@ -62,7 +63,7 @@ plt.show()
 
 # Save model
 
-model.save("model_weights.pth")
+model.save("../tmp/model_weights.pth")
 
 # Access underlying torchvision model for further control
 
