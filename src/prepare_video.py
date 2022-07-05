@@ -54,17 +54,17 @@ def combine(output):
     video.release()
 
 
-# extract_frames("../tmp/input3.mp4")
+extract_frames("../tmp/input.mp4")
 
-# path = os.path.realpath(
-#     os.path.join(os.path.dirname(__file__), "..", "tmp", "video_frames")
-# )
+path = os.path.realpath(
+    os.path.join(os.path.dirname(__file__), "..", "tmp", "video_frames")
+)
 
-# for file in os.listdir(path):
-#     full_path = os.path.join(path, file)
-#     print(full_path)
-#     skew(full_path)
+for file in os.listdir(path):
+    full_path = os.path.join(path, file)
+    print(full_path)
+    skew(full_path)
 
 combine(
-    "../tmp/skewed2.avi",
+    "../tmp/skewed.avi",
 )
