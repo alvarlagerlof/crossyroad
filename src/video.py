@@ -1,3 +1,4 @@
+from math import floor
 import cv2
 import numpy as np
 from detecto.core import Model
@@ -157,10 +158,11 @@ def detect_video(model, input_file, output_file, fps=30, score_filter=0.6):
 
 def render_grid(predictions, score_filter, width, height):
     tic = time.perf_counter()
+    gridsize = 15
 
     # create basic grid
-    grid = np.zeros((21, 21), "<U11")
-    grid[10][10] = "duck"
+    grid = np.zeros((29, 29), "<U11")
+    grid[14][14] = "duck"
 
     # scan for duck
     results = [item for item in zip(
@@ -179,7 +181,7 @@ def render_grid(predictions, score_filter, width, height):
 
     # create grid frame
     scale = 10
-    frame = np.zeros((21 * scale, 21 * scale, 3), np.uint8)
+    frame = np.zeros((29 * scale, 29 * scale, 3), np.uint8)
 
     # scan for items
     if x_max or y_max != None:
@@ -187,8 +189,8 @@ def render_grid(predictions, score_filter, width, height):
             if score < score_filter:
                 break
 
-            x = round((box[2].item() - x_max.item()) / width * 10 + 10)
-            y = round((box[3].item() - y_max.item()) / height * 10 + 10)
+            x = floor((box[2].item() - x_max.item()) / width * 14 + 14)
+            y = floor((box[3].item() - y_max.item()) / height * 14 + 14)
 
             # print(label, x, y)
             if grid[x][y] == "":
@@ -222,12 +224,20 @@ def render_grid(predictions, score_filter, width, height):
                         (150, 50, 50),
                         -1,
                     )
-                elif row != "":
+                elif row == "rock":
                     cv2.rectangle(
                         frame,
                         (x * scale + scale, y * scale + scale),
                         (x * scale, y * scale),
                         (150, 150, 150),
+                        -1,
+                    )
+                elif row != "":
+                    cv2.rectangle(
+                        frame,
+                        (x * scale + scale, y * scale + scale),
+                        (x * scale, y * scale),
+                        (0, 0, 255),
                         -1,
                     )
                 else:
