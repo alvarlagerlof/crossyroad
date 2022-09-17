@@ -17,7 +17,8 @@ def main(grid):
 
     algorithm(newgrid, newgrid[14][14], newgrid[14][0])
 
-    draw(newgrid)
+    return newgrid
+    # draw(newgrid)
 
 
 def findOneItem(grid, item):
@@ -71,14 +72,20 @@ class position:  # make a node
     def update_neghbors(self, grid):
         self.neighbors = []
         # down
-        if self.row < self.total_rows - 1 and not grid[self.row + 1][self.col].is_barrier():
-            self.neighbors.append(grid[self.row+1][self.col])
+        if (
+            self.row < self.total_rows - 1
+            and not grid[self.row + 1][self.col].is_barrier()
+        ):
+            self.neighbors.append(grid[self.row + 1][self.col])
 
         if self.row > 0 and not grid[self.row - 1][self.col].is_barrier():  # up
-            self.neighbors.append(grid[self.row-1][self.col])
+            self.neighbors.append(grid[self.row - 1][self.col])
 
         # right
-        if self.col < self.total_rows - 1 and not grid[self.row][self.col + 1].is_barrier():
+        if (
+            self.col < self.total_rows - 1
+            and not grid[self.row][self.col + 1].is_barrier()
+        ):
             self.neighbors.append(grid[self.row][self.col + 1])
 
         if self.col > 0 and not grid[self.row][self.col - 1].is_barrier():  # left
@@ -161,8 +168,7 @@ def algorithm(grid, start, end):
             if temp_g_score < g_score[neighbor]:
                 came_from[neighbor] = current
                 g_score[neighbor] = temp_g_score
-                f_score[neighbor] = temp_g_score + \
-                    h(neighbor.get_pos(), end.get_pos())
+                f_score[neighbor] = temp_g_score + h(neighbor.get_pos(), end.get_pos())
                 if neighbor not in open_set_hash:
                     count += 1
                     open_set.put((f_score[neighbor], count, neighbor))

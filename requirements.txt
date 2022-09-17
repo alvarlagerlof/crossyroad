@@ -1,2 +1,5 @@
 detecto
 torchvision
+adb
+scrcpy-client
+opencv-python

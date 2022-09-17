@@ -48,13 +48,11 @@ model = core.Model(
         "light on",
         "coin",
         "stump",
-    ],
-    device=torch.device("cuda"),
+    ]
 )
 # device=torch.device("cuda")
 
-losses = model.fit(loader, val_dataset, epochs=10,
-                   learning_rate=0.001, verbose=True)
+losses = model.fit(loader, val_dataset, epochs=10, learning_rate=0.003, verbose=True)
 
 # Visualize loss during training
 

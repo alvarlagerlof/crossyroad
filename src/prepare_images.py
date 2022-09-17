@@ -20,6 +20,22 @@ def skew(file):
     cv2.imwrite(file, img)
 
 
+def skew_frame(frame):
+    # scale_percent = 20  # percent of original size
+    # width = int(frame.shape[1] * scale_percent / 100)
+    # height = int(frame.shape[0] * scale_percent / 100)
+    # dim = (width, height)
+
+    # frame = cv2.resize(frame, dim, interpolation=cv2.INTER_AREA)
+
+    rows, cols = frame.shape[:2]
+    # [width (0-1), angle left,  x1], [angle top, heig  ht (0-1), y1]
+    M = np.float32([[1, 0.5, 0], [-0.26, 1, 37]])
+    frame = cv2.warpAffine(frame, M, (cols + 147, rows + 37))
+
+    return frame
+
+
 path = os.path.realpath(
     os.path.join(os.path.dirname(__file__), "..", "data", "convert")
 )

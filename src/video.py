@@ -53,8 +53,7 @@ def detect_video(model, input_file, output_file, fps=30, score_filter=0.6):
     # The VideoWriter with which we'll write our video with the boxes and labels
     # Parameters: filename, fourcc, fps, frame_size
     out = cv2.VideoWriter(
-        output_file, cv2.VideoWriter_fourcc(
-            *"DIVX"), fps, (frame_width, frame_height)
+        output_file, cv2.VideoWriter_fourcc(*"DIVX"), fps, (frame_width, frame_height)
     )
 
     # Transform to apply on individual frames of the video
@@ -102,8 +101,7 @@ def detect_video(model, input_file, output_file, fps=30, score_filter=0.6):
         tic = time.perf_counter()
         predictions = model.predict(frame)
 
-        render_grid(predictions, score_filter,
-                    frame.shape[:2][0], frame.shape[:2][1])
+        render_grid(predictions, score_filter, frame.shape[:2][0], frame.shape[:2][1])
 
         # Add the top prediction of each class to the frame
         for label, box, score in zip(*predictions):
@@ -167,13 +165,11 @@ def render_grid(predictions, score_filter, width, height):
     grid[14][14] = "duck"
 
     # scan for duck
-    results = [item for item in zip(
-        *predictions) if item[0] == "duck"]
+    results = [item for item in zip(*predictions) if item[0] == "duck"]
     label, box, score = (None, None, None)
 
     if len(results) > 0:
-        label, box, score = [item for item in zip(
-            *predictions) if item[0] == "duck"][0]
+        label, box, score = [item for item in zip(*predictions) if item[0] == "duck"][0]
     x_max = None
     y_max = None
 
@@ -287,7 +283,6 @@ labels = [
 
 model = Model.load("../tmp/model_weights.pth", labels)
 
-detect_video(model, "../tmp/input.mp4",
-             "../tmp/detected.avi", score_filter=0.3)
+detect_video(model, "../tmp/input.mp4", "../tmp/detected.avi", score_filter=0.3)
 # detect_video(model, "../tmp/input_short.mp4",
 #             "../tmp/detected_short.avi", score_filter=0.2)
