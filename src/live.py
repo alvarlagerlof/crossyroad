@@ -3,7 +3,25 @@ import threading
 import time
 from importlib.machinery import PathFinder
 from math import floor
+from timeit import repeat
 from typing import final
+
+from scrcpy.const import (
+    KEYCODE_W,
+    KEYCODE_A,
+    KEYCODE_S,
+    KEYCODE_D,
+    KEYCODE_SYSTEM_NAVIGATION_UP,
+    KEYCODE_SYSTEM_NAVIGATION_DOWN,
+    KEYCODE_SYSTEM_NAVIGATION_LEFT,
+    KEYCODE_SYSTEM_NAVIGATION_RIGHT,
+    KEYCODE_DPAD_UP,
+    KEYCODE_DPAD_DOWN,
+    KEYCODE_DPAD_LEFT,
+    KEYCODE_DPAD_RIGHT,
+    ACTION_DOWN,
+    ACTION_UP,
+)
 
 import cv2
 import numpy as np
@@ -17,9 +35,12 @@ from prepare_images import skew_frame
 final_frame = None
 path_grid = None
 thinking = False
+direction = None
+client = None
 
 
 def detect_live(model):
+    global client
     client = scrcpy.Client(device="DEVICE SERIAL")
     adb.connect("127.0.0.1:5037")
     # client = scrcpy.Client(device=adb.devices()[0])
@@ -38,6 +59,14 @@ def detect_live(model):
 
 
 def on_frame(frame):
+    global thinking
+    global client
+
+    # if client != None and direction != None:
+    #     print("keycode", direction)
+    #     # client.control.keycode(KEYCODE_DPAD_UP)
+    #     client.control.keycode(direction)
+
     if final_frame is not None:
         cv2.namedWindow("final", 0)
         cv2.imshow("final", final_frame)
@@ -51,6 +80,7 @@ def on_frame(frame):
     # If you set non-blocking (default) in constructor, the frame event receiver
     # may receive None to avoid blocking event.
     if frame is not None:
+
         # frame is an bgr numpy ndarray (cv2' default format)
         # cv2.namedWindow("raw", 0)
         # cv2.imshow("raw", frame)
@@ -58,58 +88,17 @@ def on_frame(frame):
         # print(height, width, channels)
 
         if not thinking:
+            print("press")
+            client.control.keycode(KEYCODE_SYSTEM_NAVIGATION_UP, ACTION_DOWN)
+            client.control.keycode(KEYCODE_SYSTEM_NAVIGATION_UP, ACTION_UP)
+            # print(KEYCODE_SYSTEM_NAVIGATION_UP == direction)
+            # if client != None and direction != None:
+            #     print("keycode", direction)
+            #     # client.control.keycode(KEYCODE_DPAD_UP)
+            #     client.control.keycode(direction)
+
             t1 = threading.Thread(target=heavy, args=[frame])
             t1.start()
-
-        # frame = skew_frame(frame)
-
-        # cv2.namedWindow("skewed", 0)
-        # cv2.imshow("skewed", frame)
-
-        # tic = time.perf_counter()
-        # predictions = model.predict(frame)
-
-        # render_grid(predictions, score_filter, frame.shape[:2][0], frame.shape[:2][1])
-
-        # # Add the top prediction of each class to the frame
-        # for label, box, score in zip(*predictions):
-        #     if score < score_filter:
-        #         continue
-
-        #     # Since the predictions are for scaled down frames,
-        #     # we need to increase the box dimensions
-        #     # box *= scale_down_factor  # TODO Issue #16
-
-        #     # Create the box around each object detected
-        #     # Parameters: frame, (start_x, start_y), (end_x, end_y), (r, g, b), thickness
-        #     cv2.rectangle(
-        #         frame,
-        #         (int(box[0]), int(box[1])),
-        #         (int(box[2]), int(box[3])),
-        #         (255, 0, 0),
-        #         3,
-        #     )
-
-        #     # Write the label and score for the boxes
-        #     # Parameters: frame, text, (start_x, start_y), font, font scale, (r, g, b), thickness
-        #     cv2.putText(
-        #         frame,
-        #         "{}: {}".format(label, round(score.item(), 2)),
-        #         (int(box[0]), int(box[1] - 10)),
-        #         cv2.FONT_HERSHEY_SIMPLEX,
-        #         1,
-        #         (255, 0, 0),
-        #         3,
-        #     )
-
-        # cv2.namedWindow("predictions", 0)
-        # cv2.imshow("predictions", frame)
-
-        # toc = time.perf_counter()
-        # print(f"Predicted and rendered in {toc - tic:0.4f} seconds")
-
-        # cv2.waitKey(1)
-        # cv2.destroyAllWindows()
 
 
 def heavy(frame, score_filter=0.3):
@@ -123,50 +112,47 @@ def heavy(frame, score_filter=0.3):
 
     frame = skew_frame(frame)
 
-    # cv2.namedWindow("skewed", 0)
-    # cv2.imshow("skewed", frame)
-
     tic = time.perf_counter()
     predictions = model.predict(frame)
 
     render_grid(predictions, score_filter, frame.shape[:2][0], frame.shape[:2][1])
 
-    # Add the top prediction of each class to the frame
-    for label, box, score in zip(*predictions):
-        if score < score_filter:
-            continue
+    # # Add the top prediction of each class to the frame
+    # for label, box, score in zip(*predictions):
+    #     if score < score_filter:
+    #         continue
 
-        # Since the predictions are for scaled down frames,
-        # we need to increase the box dimensions
-        # box *= scale_down_factor  # TODO Issue #16
+    #     # Since the predictions are for scaled down frames,
+    #     # we need to increase the box dimensions
+    #     # box *= scale_down_factor  # TODO Issue #16
 
-        # Create the box around each object detected
-        # Parameters: frame, (start_x, start_y), (end_x, end_y), (r, g, b), thickness
-        cv2.rectangle(
-            frame,
-            (int(box[0]), int(box[1])),
-            (int(box[2]), int(box[3])),
-            (255, 0, 0),
-            3,
-        )
+    #     # Create the box around each object detected
+    #     # Parameters: frame, (start_x, start_y), (end_x, end_y), (r, g, b), thickness
+    #     cv2.rectangle(
+    #         frame,
+    #         (int(box[0]), int(box[1])),
+    #         (int(box[2]), int(box[3])),
+    #         (255, 0, 0),
+    #         3,
+    #     )
 
-        # Write the label and score for the boxes
-        # Parameters: frame, text, (start_x, start_y), font, font scale, (r, g, b), thickness
-        cv2.putText(
-            frame,
-            "{}: {}".format(label, round(score.item(), 2)),
-            (int(box[0]), int(box[1] - 10)),
-            cv2.FONT_HERSHEY_SIMPLEX,
-            1,
-            (255, 0, 0),
-            3,
-        )
+    #     # Write the label and score for the boxes
+    #     # Parameters: frame, text, (start_x, start_y), font, font scale, (r, g, b), thickness
+    #     cv2.putText(
+    #         frame,
+    #         "{}: {}".format(label, round(score.item(), 2)),
+    #         (int(box[0]), int(box[1] - 10)),
+    #         cv2.FONT_HERSHEY_SIMPLEX,
+    #         1,
+    #         (255, 0, 0),
+    #         3,
+    #     )
 
     # cv2.namedWindow("predictions", 0)
     # cv2.imshow("predictions", frame)
 
-    toc = time.perf_counter()
-    print(f"Predicted and rendered in {toc - tic:0.4f} seconds")
+    # toc = time.perf_counter()
+    # print(f"Predicted and rendered in {toc - tic:0.4f} seconds")
 
     final_frame = frame
     # cv2.waitKey(1)
@@ -175,6 +161,7 @@ def heavy(frame, score_filter=0.3):
 
 def render_grid(predictions, score_filter, width, height):
     global path_grid
+    global direction
     tic = time.perf_counter()
     gridsize = 15
 
@@ -267,7 +254,7 @@ def render_grid(predictions, score_filter, width, height):
         # cv2.namedWindow("grid", 0)
         # cv2.imshow("grid", frame)
 
-        path_grid = pathfinder.main(grid)
+        path_grid, direction = pathfinder.main(grid)
     # if no duck then render red frame
     else:
         frame[:] = (0, 0, 255)
@@ -275,7 +262,7 @@ def render_grid(predictions, score_filter, width, height):
         # cv2.imshow("grid", frame)
 
     toc = time.perf_counter()
-    print(f"Renderd grid in in {toc - tic:0.4f} seconds")
+    # print(f"Renderd grid in in {toc - tic:0.4f} seconds")
 
     # cv2.waitKey(0)
 

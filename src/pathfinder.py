@@ -7,6 +7,21 @@ import operator
 # 2 is open
 # 1 is
 
+from scrcpy.const import (
+    KEYCODE_W,
+    KEYCODE_A,
+    KEYCODE_S,
+    KEYCODE_D,
+    KEYCODE_SYSTEM_NAVIGATION_UP,
+    KEYCODE_SYSTEM_NAVIGATION_DOWN,
+    KEYCODE_SYSTEM_NAVIGATION_LEFT,
+    KEYCODE_SYSTEM_NAVIGATION_RIGHT,
+    KEYCODE_DPAD_UP,
+    KEYCODE_DPAD_DOWN,
+    KEYCODE_DPAD_LEFT,
+    KEYCODE_DPAD_RIGHT,
+)
+
 
 def main(grid):
     start = (14, 14)
@@ -15,10 +30,7 @@ def main(grid):
     newgrid = makeGrid(grid)
     updateGrid(newgrid)
 
-    algorithm(newgrid, newgrid[14][14], newgrid[14][0])
-
-    return newgrid
-    # draw(newgrid)
+    return (draw(newgrid), algorithm(newgrid, newgrid[14][14], newgrid[14][0]))
 
 
 def findOneItem(grid, item):
@@ -124,16 +136,17 @@ def h(p1, p2):  # hitta hur långt bort den är
 
 def direction(goingTo, start):
     res = tuple(map(operator.sub, goingTo.get_pos(), start))
+
     if res == (0, 0):
-        return "staying still"
+        return None
     if res == (0, 1):
-        return "Down"
+        return KEYCODE_SYSTEM_NAVIGATION_DOWN
     if res == (1, 0):
-        return "Right"
+        return KEYCODE_SYSTEM_NAVIGATION_RIGHT
     if res == (-1, 0):
-        return "left"
+        return KEYCODE_SYSTEM_NAVIGATION_LEFT
     if res == (0, -1):
-        return "Up"
+        return KEYCODE_SYSTEM_NAVIGATION_UP
 
 
 def reconstruct_path(came_from, current):
@@ -141,7 +154,7 @@ def reconstruct_path(came_from, current):
         x = current
         current = came_from[current]
         current.make_path()
-    print(direction(x, (14, 14)))
+    return direction(x, (14, 14))
 
 
 def algorithm(grid, start, end):
@@ -160,8 +173,7 @@ def algorithm(grid, start, end):
         current = open_set.get()[2]
         open_set_hash.remove(current)
         if current == end:
-            reconstruct_path(came_from, end)
-            return True
+            return reconstruct_path(came_from, end)
 
         for neighbor in current.neighbors:
             temp_g_score = g_score[current] + 1
@@ -218,5 +230,7 @@ def draw(grid):
                     (100, 100, 100),
                     1,
                 )
-    cv2.namedWindow("grid2", 0)
-    cv2.imshow("grid2", frame)
+
+    return frame
+    # cv2.namedWindow("grid2", 0)
+    # cv2.imshow("grid2", frame)
