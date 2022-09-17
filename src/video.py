@@ -1,8 +1,10 @@
+from importlib.machinery import PathFinder
 from math import floor
 import cv2
 import numpy as np
 from detecto.core import Model
 import time
+import pathfinder
 
 
 def detect_video(model, input_file, output_file, fps=30, score_filter=0.6):
@@ -248,10 +250,11 @@ def render_grid(predictions, score_filter, width, height):
                         (100, 100, 100),
                         1,
                     )
-
         cv2.namedWindow("grid", 0)
         cv2.imshow("grid", frame)
 
+        pathfinder.main(grid)
+    # if no duck then render red frame
     else:
         frame[:] = (0, 0, 255)
         cv2.namedWindow("grid", 0)
