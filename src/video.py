@@ -254,6 +254,7 @@ def render_grid(predictions, score_filter, width, height):
         cv2.imshow("grid", frame)
 
         pathfinder.main(grid)
+        cv2.waitKey(0)
     # if no duck then render red frame
     else:
         frame[:] = (0, 0, 255)

@@ -1,11 +1,12 @@
 from queue import PriorityQueue
 import cv2
 import numpy as np
-
+import operator
 
 # 0 is closed
 # 2 is open
 # 1 is
+
 
 def main(grid):
     start = (14, 14)
@@ -114,10 +115,26 @@ def h(p1, p2):  # hitta hur långt bort den är
     return abs(row1 - row2) + abs(col1 - col2)
 
 
+def direction(goingTo, start):
+    res = tuple(map(operator.sub, goingTo.get_pos(), start))
+    if res == (0, 0):
+        return "staying still"
+    if res == (0, 1):
+        return "Down"
+    if res == (1, 0):
+        return "Right"
+    if res == (-1, 0):
+        return "left"
+    if res == (0, -1):
+        return "Up"
+
+
 def reconstruct_path(came_from, current):
     while current in came_from:
+        x = current
         current = came_from[current]
         current.make_path()
+    print(direction(x, (14, 14)))
 
 
 def algorithm(grid, start, end):
