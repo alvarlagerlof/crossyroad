@@ -8,18 +8,11 @@ import operator
 # 1 is
 
 from scrcpy.const import (
-    KEYCODE_W,
-    KEYCODE_A,
-    KEYCODE_S,
-    KEYCODE_D,
-    KEYCODE_SYSTEM_NAVIGATION_UP,
-    KEYCODE_SYSTEM_NAVIGATION_DOWN,
-    KEYCODE_SYSTEM_NAVIGATION_LEFT,
-    KEYCODE_SYSTEM_NAVIGATION_RIGHT,
     KEYCODE_DPAD_UP,
     KEYCODE_DPAD_DOWN,
     KEYCODE_DPAD_LEFT,
     KEYCODE_DPAD_RIGHT,
+    KEYCODE_DPAD_CENTER,
 )
 
 
@@ -140,13 +133,13 @@ def direction(goingTo, start):
     if res == (0, 0):
         return None
     if res == (0, 1):
-        return KEYCODE_SYSTEM_NAVIGATION_DOWN
+        return KEYCODE_DPAD_DOWN
     if res == (1, 0):
-        return KEYCODE_SYSTEM_NAVIGATION_RIGHT
+        return KEYCODE_DPAD_RIGHT
     if res == (-1, 0):
-        return KEYCODE_SYSTEM_NAVIGATION_LEFT
+        return KEYCODE_DPAD_LEFT
     if res == (0, -1):
-        return KEYCODE_SYSTEM_NAVIGATION_UP
+        return KEYCODE_DPAD_UP
 
 
 def reconstruct_path(came_from, current):
